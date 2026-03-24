@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Binky Bets</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<style>
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#0B1220;
+  color:#F9FAFB;
+}
+
+/* HERO */
+.hero {
+  text-align:center;
+  padding:140px 20px;
+}
+
+.hero h1 {
+  font-size:52px;
+  font-weight:800;
+}
+
+.hero p {
+  color:#9CA3AF;
+  margin:20px 0;
+}
+
+.btn {
+  background:#3B82F6;
+  padding:16px 32px;
+  border-radius:12px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  box-shadow:0 0 20px rgba(59,130,246,0.4);
+}
+
+.btn:hover {
+  box-shadow:0 0 30px rgba(96,165,250,0.7);
+}
+
+/* REVIEWS */
+.reviews {
+  text-align:center;
+  padding:60px 20px;
+}
+
+.review-card {
+  background:#1F2937;
+  padding:20px;
+  border-radius:12px;
+  margin:10px auto;
+  max-width:500px;
+}
+
+/* FEATURES */
+.features {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  padding:60px 20px;
+}
+
+.card {
+  background:#111827;
+  padding:25px;
+  border-radius:16px;
+  width:250px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 0 20px rgba(59,130,246,0.3);
+}
+
+/* STATS */
+.stats {
+  display:flex;
+  justify-content:center;
+  gap:50px;
+  padding:60px 20px;
+}
+
+.stat h2 {
+  color:#22C55E;
+}
+
+/* CTA */
+.cta {
+  text-align:center;
+  padding:100px 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>AI-Powered Sports Betting Intelligence</h1>
+  <p>Built on data. Proven results. No hype.</p>
+  <a href="https://discord.gg/h8PrEFYG" class="btn">Join Free Discord</a>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="reviews">
+  <h2>4.9 / 5 • 200+ Members</h2>
+
+  <div class="review-card">“Made my money back in 2 days. Insane.”</div>
+  <div class="review-card">“Finally something that actually works.”</div>
+  <div class="review-card">“Best betting group I’ve joined.”</div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="card">
+    <h3>AI Predictions</h3>
+    <p>Real-time data models find value bets instantly.</p>
+  </div>
+  <div class="card">
+    <h3>Easy to Follow</h3>
+    <p>Just copy bets and track performance.</p>
+  </div>
+  <div class="card">
+    <h3>Consistent Profit</h3>
+    <p>Long-term edge over bookmakers.</p>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stat">
+    <h2>85%</h2>
+    <p>Win Rate</p>
+  </div>
+  <div class="stat">
+    <h2>+1200</h2>
+    <p>Units Profit</p>
+  </div>
+  <div class="stat">
+    <h2>2000+</h2>
+    <p>Members</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta">
+  <h1>Start Winning Smarter</h1>
+  <a href="https://discord.gg/h8PrEFYG" class="btn">Join Now</a>
+</section>
+
+<script>
+gsap.from(".hero h1",{y:-50,opacity:0,duration:1});
+gsap.from(".hero p",{y:20,opacity:0,delay:0.3});
+gsap.from(".btn",{opacity:0,delay:0.6});
+</script>
+
+</body>
+</html>
